@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestFix - Ремонт телефонов</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/img/logo.svg" alt="logo">
+            </div>
+            <nav class="nav">
+                <a href="#about">О нас</a>
+                <a href="services.html">Услуги</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <button class="btn-booking" onclick="goToBooking()">Записаться</button>
+        </div>
+    </header>
+    
+    <section class="hero">
+    <div class="hero-content">
+        <h2><span class="green">B</span>est<span class="green">F</span>ix — мы экономим ваши деньги</h2>
+         
+        <div class="hero-slider">
+        <div class="slider-container">
+             
+            <div class="slide active">
+            <div class="slide-image">
+                <img src="/img/slider1.png" alt="Ремонт телефонов">
+            </div>
+            <div class="slide-content">
+                <p>Ремонт техники Apple, Samsung, Huawei, Meizu, Xiaomi и других телефонов любой сложности</p>
+                <button class="btn" onclick="goToBooking()">Записаться</button>
+            </div>
+            </div>
+             
+            <div class="slide">
+            <div class="slide-image">
+                <img src="/img/slider2.png" alt="Быстрый ремонт">
+            </div>
+            <div class="slide-content">
+                <p>Моддинг iPhone на Ваш вкус. Установка и настройкой программного обеспечения</p>
+                <button class="btn" onclick="goToBooking()">Записаться</button>
+            </div>
+            </div>
+             
+            <div class="slide">
+            <div class="slide-image">
+                <img src="/img/slider3.png" alt="Оригинальные запчасти">
+            </div>
+            <div class="slide-content">
+                <p>Мы - Сервисный центр который ценит своих клиентов и их время</p>
+                <button class="btn" onclick="goToBooking()">Записаться</button>
+            </div>
+            </div>
+        </div>
+         
+        <button class="slider-btn prev-btn" aria-label="Предыдущий слайд">‹</button>
+        <button class="slider-btn next-btn" aria-label="Следующий слайд">›</button>
+         
+        <div class="slider-indicators">
+            <button class="indicator active" data-slide="0" aria-label="Перейти к слайду 1"></button>
+            <button class="indicator" data-slide="1" aria-label="Перейти к слайду 2"></button>
+            <button class="indicator" data-slide="2" aria-label="Перейти к слайду 3"></button>
+        </div>
+        </div>
+    </div>
+    </section>
+    
+    <section class="about" id="about">
+        <h2 class="section-title">Побольше о нас</h2>
+        <div class="cards-container">
+            <div class="card">
+                <p class="card-title green">80%</p>
+                <p class="card-text">iPhone мы чиним</p>
+                <p class="card-text">за 24 минуты</p>
+            </div>
+            <div class="card">
+                <p class="card-title green">Гарантия</p>
+                <p class="card-text">до 180 дней</p>
+            </div>
+            <div class="card">
+                <p class="card-title green">Бесплатная</p>
+                <p class="card-text">диагностика</p>
+            </div>
+            <div class="card">
+                <p class="card-title green">Ремонт</p>
+                <p class="card-text">от 15 минут, при Вас</p>
+            </div>
+            <div class="card">
+                <p class="card-title green">Ожидание</p>
+                <p class="card-text">готовности в уютной атмосфере нашего офиса</p>
+            </div>
+            <div class="card">
+                <p class="card-title green">Оригинальные</p>
+                <p class="card-text">запчасти в наличии</p>
+            </div>
+            <div class="card">
+                <p class="card-title green">Действительно</p>
+                <p class="card-text">индивидуальный подход к каждому клиенту</p>
+            </div>
+            <div class="card">
+                <p class="card-title green">И многое другое...</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="services">
+        <h2 class="section-title">Популярные услуги</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="/img/serv1.png" alt="Диагностика">
+                <h3>Диагностика устройства</h3>
+                <p>Первичная диагностика позволяет выявить неисправности «на ходу», т.е. без полной разборки телефона.</p>
+                <p class="price green">бесплатно</p>
+                <button class="btn-green" onclick="goToBooking()">Записаться</button>
+            </div>
+            <div class="service-card">
+                <img src="/img/serv2.png" alt="Замена контроллера">
+                <h3>Замена контроллера питания</h3>
+                <p>Замена контроллера питания у iPhone любой модели - процедура сложная и серьезная по своему исполнению.</p>
+                <p class="price green">3 500–4 500 ₽</p>
+                <button class="btn-green" onclick="goToBooking()">Записаться</button>
+            </div>
+            <div class="service-card">
+                <img src="/img/serv3.png" alt="Замена динамика">
+                <h3>Замена слухового динамика</h3>
+                <p>Слуховой динамик на телефоне — один из важнейших элементов. При неполадках в функционировании динамика Вы не сможете услышать собеседника.</p>
+                <p class="price green">800–1 800 ₽</p>
+                <button class="btn-green" onclick="goToBooking()">Записаться</button>
+            </div>
+        </div>
+        <button class="btn-all-services" onclick="goToServices()">Все услуги</button>
+    </section>
+    
+    <section class="contacts" id="contacts">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contacts-container">
+            <div class="contact-info">
+                <div class="info-block">
+                    <h3>Адрес</h3>
+                    <p>Сергиев Посад, ул. Железнодорожная дом 24 а, 2 этаж, офис №2</p>
+                </div>
+                <div class="info-block">
+                    <h3>Телефон</h3>
+                    <p>8(916) 764-04-04, 8(916) 698-93-99</p>
+                </div>
+                <div class="info-block">
+                    <h3>График</h3>
+                    <p>ПН-СБ с 10:00 до 20:00</p>
+                </div>
+            </div>
+            <div class="map">
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/best_fix/241299285566/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Best Fix</a><a href="https://yandex.ru/maps/10752/sergiev-posad/category/phone_repair/184107787/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Ремонт телефонов в Сергиевом Посаде</a><a href="https://yandex.ru/maps/10752/sergiev-posad/category/items_for_mobile_phones/52984923455/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Товары для мобильных телефонов в Сергиевом Посаде</a><iframe src="https://yandex.ru/map-widget/v1/?ll=38.150193%2C56.300909&mode=poi&poi%5Bpoint%5D=38.149765%2C56.301096&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D241299285566&z=19.4"  height="500" width="800" style="position:relative;"></iframe></div>
+            </div>
+            <div class="question-form" id="questionForm">
+                <h3>Остались вопросы?</h3>
+                <form id="question">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <textarea placeholder="Текст сообщения" required></textarea>
+                    <button type="submit" class="btn-submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/img/logo.svg" alt="logo">
+            </div>
+            <div class="footer-nav">
+                <div class="footer-column">
+                    <h4>Навигация</h4>
+                    <a href="#about">О нас</a>
+                    <a href="/services.html">Услуги</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Обратная связь</h4>
+                    <a href="#contacts">Задать вопрос</a>
+                    <a href="/booking.html">Записаться</a>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon">
+                    <img src="/img/tg.svg" alt="tg">
+                </a>
+                <a href="#" class="social-icon">
+                     <img src="/img/vk.svg" alt="vk">
+                </a>
+                <a href="#" class="social-icon">
+                     <img src="/img/inst.svg" alt="inst">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
